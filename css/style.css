@@ -182,14 +182,23 @@ p {
     transition: all 0.3s ease;
 }
 
-.logo-img {
-    height: 50px;
-    width: auto;
-    max-width: 200px;
+.logo-icon {
+    height: 40px;
+    width: 40px;
+    flex-shrink: 0;
     transition: all 0.3s ease;
 }
 
-.logo-link:hover .logo-img {
+.logo-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #c9a96e;
+    white-space: nowrap;
+    margin-left: 12px;
+    transition: all 0.3s ease;
+}
+
+.logo-link:hover .logo-icon {
     transform: scale(1.05);
     filter: brightness(1.1);
 }
@@ -1556,9 +1565,14 @@ section {
     }
     
     /* Mobile Logo Optimierungen */
-    .logo-img {
-        height: 40px;
-        max-width: 160px;
+    .logo-icon {
+        height: 35px;
+        width: 35px;
+    }
+    
+    .logo-text {
+        font-size: 1.1rem;
+        margin-left: 8px;
     }
     
     .nav-container {
