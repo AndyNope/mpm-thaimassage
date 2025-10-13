@@ -1,0 +1,3 @@
+<!-- Placeholder für favicon.png (16x16, 32x32, 48x48) -->
+<!-- Wird normalerweise mit einem Bildbearbeitungsprogramm aus dem SVG erstellt -->
+<!-- Für jetzt nutzen wir das SVG als Fallback -->

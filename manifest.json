@@ -1,0 +1,22 @@
+{
+  "name": "MPM Thai Massage",
+  "short_name": "MPM Thai",
+  "description": "Authentische Thai-Massage in Weinfelden",
+  "icons": [
+    {
+      "src": "images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#c9a96e",
+  "background_color": "#2c2c2c",
+  "lang": "de"
+}
