@@ -1071,6 +1071,42 @@ section {
     margin-top: 1rem;
 }
 
+/* Mobile Icon-Button Optimierungen */
+@media (max-width: 768px) {
+    .btn-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+        border-width: 2px;
+    }
+    
+    .quick-actions {
+        gap: 1rem !important;
+        margin: 1.5rem 0;
+    }
+    
+    .opening-hours .quick-actions {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .opening-hours .direct-email {
+        margin-top: 1rem;
+    }
+    
+    /* Bessere Touch-Targets */
+    .btn-icon {
+        min-width: 44px;
+        min-height: 44px;
+    }
+    
+    /* Reduzierte Hover-Effekte auf Touch */
+    .btn-icon:hover {
+        transform: none;
+        box-shadow: 0 4px 15px rgba(201, 169, 110, 0.2);
+    }
+}
+
 /* reCAPTCHA Styling */
 .recaptcha-notice {
     margin: 1rem 0;
