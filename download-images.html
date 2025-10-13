@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilder Herunterladen - Sampan Thai Massage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c5530;
+            text-align: center;
+        }
+        .image-section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .download-btn {
+            background: #2c5530;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 5px;
+        }
+        .download-btn:hover {
+            background: #1e3a21;
+        }
+        .instructions {
+            background: #e8f5e8;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bilder für Sampan Thai Massage Website</h1>
+        
+        <div class="instructions">
+            <h3>Anleitung:</h3>
+            <p>Klicken Sie mit der rechten Maustaste auf jedes Bild und wählen Sie "Bild speichern unter..." um die Bilder lokal zu speichern. Speichern Sie sie im <code>images/</code> Ordner ihrer Website.</p>
+        </div>
+
+        <div class="image-section">
+            <h3>1. Hero/Header Bild (attorney-1.png)</h3>
+            <img src="https://sampan-thaimassage.ch/wp-content/uploads/2024/01/attorney-1.png" alt="Hero Bild">
+            <br>
+            <a href="https://sampan-thaimassage.ch/wp-content/uploads/2024/01/attorney-1.png" download="hero-image.png" class="download-btn">Herunterladen</a>
+        </div>
+
+        <div class="image-section">
+            <h3>2. Thai Massage Service (attorney-3.png)</h3>
+            <img src="https://sampan-thaimassage.ch/wp-content/uploads/2024/01/attorney-3.png" alt="Thai Massage">
+            <br>
+            <a href="https://sampan-thaimassage.ch/wp-content/uploads/2024/01/attorney-3.png" download="thai-massage.png" class="download-btn">Herunterladen</a>
+        </div>
+
+        <div class="image-section">
+            <h3>3. Über uns Bild (Uebermich.png)</h3>
+            <img src="https://sampan-thaimassage.ch/wp-content/uploads/2021/11/Uebermich-480x557.png" alt="Über uns">
+            <br>
+            <a href="https://sampan-thaimassage.ch/wp-content/uploads/2021/11/Uebermich-480x557.png" download="about-us.png" class="download-btn">Herunterladen</a>
+        </div>
+
+        <div class="image-section">
+            <h3>4. Spa/Kräuter-Stempel Bild</h3>
+            <img src="https://th.bing.com/th/id/R.3ddafc9a8b47cfed783b76b27bf937f9?rik=CeFZpcyEkCcHTA&riu=http%3a%2f%2fwww.leverhulmehotel.co.uk%2fwp-content%2fuploads%2f2015%2f07%2fspa-main-image.jpg" alt="Spa Bild">
+            <br>
+            <a href="https://www.leverhulmehotel.co.uk/wp-content/uploads/2015/07/spa-main-image.jpg" download="spa-image.jpg" class="download-btn">Herunterladen</a>
+        </div>
+
+        <div class="instructions">
+            <h3>Nach dem Herunterladen:</h3>
+            <ol>
+                <li>Speichern Sie alle Bilder im <code>/images/</code> Ordner</li>
+                <li>Benennen Sie sie um in:
+                    <ul>
+                        <li>hero-image.png</li>
+                        <li>thai-massage.png</li>
+                        <li>about-us.png</li>
+                        <li>spa-image.jpg</li>
+                    </ul>
+                </li>
+                <li>Aktualisieren Sie die Bildpfade in der index.html von den Online-URLs zu lokalen Pfaden</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        // Automatischer Download-Helper
+        function downloadAllImages() {
+            const images = [
+                {url: 'https://sampan-thaimassage.ch/wp-content/uploads/2024/01/attorney-1.png', name: 'hero-image.png'},
+                {url: 'https://sampan-thaimassage.ch/wp-content/uploads/2024/01/attorney-3.png', name: 'thai-massage.png'},
+                {url: 'https://sampan-thaimassage.ch/wp-content/uploads/2021/11/Uebermich-480x557.png', name: 'about-us.png'},
+                {url: 'https://www.leverhulmehotel.co.uk/wp-content/uploads/2015/07/spa-main-image.jpg', name: 'spa-image.jpg'}
+            ];
+
+            images.forEach((img, index) => {
+                setTimeout(() => {
+                    const link = document.createElement('a');
+                    link.href = img.url;
+                    link.download = img.name;
+                    link.click();
+                }, index * 1000);
+            });
+        }
+
+        // Button für automatischen Download hinzufügen
+        document.addEventListener('DOMContentLoaded', function() {
+            const autoDownloadBtn = document.createElement('button');
+            autoDownloadBtn.textContent = 'Alle Bilder automatisch herunterladen';
+            autoDownloadBtn.className = 'download-btn';
+            autoDownloadBtn.style.fontSize = '16px';
+            autoDownloadBtn.style.margin = '20px auto';
+            autoDownloadBtn.style.display = 'block';
+            autoDownloadBtn.onclick = downloadAllImages;
+            
+            document.querySelector('.container').appendChild(autoDownloadBtn);
+        });
+    </script>
+</body>
+</html>

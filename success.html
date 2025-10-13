@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nachricht gesendet - MPM Thai Massage</title>
+    <meta name="description" content="Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns zeitnah bei Ihnen.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="success-page">
+        <div class="container">
+            <div class="success-content">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h1>Vielen Dank!</h1>
+                <h2>Ihre Nachricht wurde erfolgreich gesendet</h2>
+                <p>Wir haben Ihre Anfrage erhalten und werden uns innerhalb von 24 Stunden bei Ihnen melden.</p>
+                
+                <div class="success-info">
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Antwortzeit: Innerhalb 24h</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Ihre Daten sind sicher geschützt</span>
+                    </div>
+                </div>
+                
+                <div class="success-actions">
+                    <a href="/" class="btn btn-primary">
+                        <i class="fas fa-home"></i> Zur Startseite
+                    </a>
+                    <a href="/#services" class="btn btn-outline">
+                        <i class="fas fa-spa"></i> Unsere Services
+                    </a>
+                </div>
+                
+                <div class="direct-contact">
+                    <h3>Dringend? Kontaktieren Sie uns direkt:</h3>
+                    <div class="contact-options">
+                        <a href="tel:+41798467599" class="contact-option">
+                            <i class="fas fa-phone"></i>
+                            <span>+41 79 846 75 99</span>
+                        </a>
+                        <a href="https://web.whatsapp.com/send?phone=+41798467599" class="contact-option" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="opening-hours-reminder">
+                    <h4>Öffnungszeiten:</h4>
+                    <p>Mo-Fr: 09:00 - 20:00 | Sa: 10:00 - 18:00 | So: Nur Termine</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Felsenstrasse 13, 8570 Weinfelden</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .success-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #c9a96e 0%, #8a7c65 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .success-content {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.95);
+            color: #2c2c2c;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .success-icon i {
+            font-size: 5rem;
+            color: #28a745;
+            margin-bottom: 1.5rem;
+            animation: bounce 1s ease-out;
+        }
+        
+        @keyframes bounce {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        
+        .success-content h1 {
+            font-size: 2.5rem;
+            color: #c9a96e;
+            margin-bottom: 0.5rem;
+        }
+        
+        .success-content h2 {
+            font-size: 1.5rem;
+            color: #2c2c2c;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+        
+        .success-content > p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .success-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(201, 169, 110, 0.1);
+            border-radius: 10px;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .info-item i {
+            color: #c9a96e;
+            font-size: 1.2rem;
+        }
+        
+        .success-actions {
+            margin: 2rem 0;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .direct-contact {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(201, 169, 110, 0.3);
+        }
+        
+        .direct-contact h3 {
+            color: #c9a96e;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-options {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-option {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #2c2c2c;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border: 2px solid #c9a96e;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .contact-option:hover {
+            background: #c9a96e;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .opening-hours-reminder {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: rgba(201, 169, 110, 0.1);
+            border-radius: 10px;
+        }
+        
+        .opening-hours-reminder h4 {
+            color: #c9a96e;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .opening-hours-reminder p {
+            color: #555;
+            margin: 0.3rem 0;
+            font-size: 0.95rem;
+        }
+        
+        @media (max-width: 768px) {
+            .success-content {
+                margin: 1rem;
+                padding: 2rem;
+            }
+            
+            .success-content h1 {
+                font-size: 2rem;
+            }
+            
+            .success-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 200px;
+            }
+            
+            .contact-options {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .success-info {
+                grid-template-columns: 1fr;
+                text-align: left;
+            }
+        }
+    </style>
+    
+    <!-- Auto redirect nach 30 Sekunden -->
+    <script>
+        let countdown = 30;
+        const redirectTimer = setInterval(() => {
+            countdown--;
+            if (countdown <= 0) {
+                window.location.href = '/';
+                clearInterval(redirectTimer);
+            }
+        }, 1000);
+        
+        // User kann Redirect canceln durch Mausbewegung
+        document.addEventListener('mousemove', () => {
+            clearInterval(redirectTimer);
+        });
+    </script>
+</body>
+</html>

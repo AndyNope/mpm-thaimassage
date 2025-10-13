@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seite nicht gefunden - MPM Thai Massage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="error-page">
+        <div class="container">
+            <div class="error-content">
+                <div class="error-icon">
+                    <i class="fas fa-spa"></i>
+                </div>
+                <h1>404</h1>
+                <h2>Seite nicht gefunden</h2>
+                <p>Die angeforderte Seite konnte leider nicht gefunden werden.</p>
+                <p>Möchten Sie einen entspannenden Termin vereinbaren?</p>
+                
+                <div class="error-actions">
+                    <a href="/" class="btn btn-primary">
+                        <i class="fas fa-home"></i> Zur Startseite
+                    </a>
+                    <a href="/contact" class="btn btn-outline">
+                        <i class="fas fa-calendar"></i> Termin buchen
+                    </a>
+                </div>
+                
+                <div class="error-contact">
+                    <p>Direkter Kontakt:</p>
+                    <a href="tel:+41798467599" class="contact-link">
+                        <i class="fas fa-phone"></i> +41 79 846 75 99
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .error-content {
+            max-width: 500px;
+        }
+        
+        .error-icon i {
+            font-size: 4rem;
+            color: #c9a96e;
+            margin-bottom: 2rem;
+        }
+        
+        .error-content h1 {
+            font-size: 8rem;
+            font-weight: 700;
+            color: #c9a96e;
+            margin: 0;
+            line-height: 1;
+        }
+        
+        .error-content h2 {
+            font-size: 2rem;
+            margin: 1rem 0;
+            color: white;
+        }
+        
+        .error-content p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+        
+        .error-actions {
+            margin: 2rem 0;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .error-contact {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(201, 169, 110, 0.3);
+        }
+        
+        .contact-link {
+            color: #c9a96e;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-link:hover {
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .error-content h1 {
+                font-size: 6rem;
+            }
+            
+            .error-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 200px;
+            }
+        }
+    </style>
+</body>
+</html>
