@@ -1264,20 +1264,54 @@ section {
     }
     
     .legal-content {
-        margin: 0 20px;
-        padding: 2rem;
+        margin: 0 10px; /* Reduzierte seitliche Abstände */
+        padding: 1.5rem; /* Kompakteres Padding */
+        border-radius: 10px; /* Kleinere Border-Radius */
     }
     
     .legal-content h1 {
-        font-size: 2rem;
+        font-size: 1.8rem; /* Kleinerer Titel */
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+        word-wrap: break-word;
     }
     
     .legal-section h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        line-height: 1.3;
+        word-wrap: break-word;
+        margin-bottom: 1rem;
+    }
+    
+    .legal-section h3 {
+        font-size: 1.1rem;
+        line-height: 1.3;
+        word-wrap: break-word;
     }
     
     .info-block {
         padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .info-block p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    /* Telefonnummer und E-Mail optimieren */
+    .info-block a {
+        word-break: break-all;
+        line-height: 1.4;
+        display: inline-block;
+    }
+    
+    /* Verhindern dass Titel aus der Box rutscht */
+    .legal-content * {
+        max-width: 100%;
+        box-sizing: border-box;
     }
 }
 
