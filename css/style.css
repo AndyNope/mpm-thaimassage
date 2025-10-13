@@ -1074,36 +1074,52 @@ section {
 /* Mobile Icon-Button Optimierungen */
 @media (max-width: 768px) {
     .btn-icon {
-        width: 45px;
-        height: 45px;
-        font-size: 1.1rem;
+        width: 48px !important;
+        height: 48px !important;
+        min-width: 48px;
+        min-height: 48px;
+        font-size: 1.2rem;
         border-width: 2px;
+        border-radius: 50% !important;
+        flex-shrink: 0;
     }
     
     .quick-actions {
-        gap: 1rem !important;
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 1.2rem !important;
         margin: 1.5rem 0;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important;
     }
     
-    .opening-hours .quick-actions {
-        flex-wrap: wrap;
-        justify-content: center;
+    .direct-email {
+        display: flex !important;
+        justify-content: center !important;
+        margin-top: 1rem !important;
     }
     
+    .opening-hours .quick-actions,
     .opening-hours .direct-email {
-        margin-top: 1rem;
+        justify-content: center !important;
     }
     
-    /* Bessere Touch-Targets */
+    /* Perfekte Kreise sicherstellen */
+    .avatar-circle,
     .btn-icon {
-        min-width: 44px;
-        min-height: 44px;
+        aspect-ratio: 1/1;
     }
     
-    /* Reduzierte Hover-Effekte auf Touch */
+    /* Touch-optimierte Hover-Effekte */
     .btn-icon:hover {
-        transform: none;
-        box-shadow: 0 4px 15px rgba(201, 169, 110, 0.2);
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(201, 169, 110, 0.3);
+    }
+    
+    /* Öffnungszeiten Container optimieren */
+    .opening-hours.luxury {
+        padding: 1.5rem;
     }
 }
 
